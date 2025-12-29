@@ -5,10 +5,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="portfolio.html">Portfolio</a>
-</nav>
+<header>
+  <div class="logo">MyWebsite</div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+  </nav>
+  <button class="dark-btn" onclick="toggleDark()">🌙</button>
+</header>
 </body>
 </html>
