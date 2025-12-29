@@ -38,6 +38,27 @@ nav a {
   cursor: pointer;
 }
 
+.dark-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark header,
+body.dark footer,
+body.dark nav {
+  background: #000;
+}
+
+
 /* MAIN */
 main {
   padding: 100px 40px 40px;
