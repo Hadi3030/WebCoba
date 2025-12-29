@@ -13,6 +13,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo {
@@ -34,7 +40,7 @@ nav a {
 
 /* MAIN */
 main {
-  padding: 40px;
+  padding: 100px 40px 40px;
   min-height: 70vh;
 }
 
@@ -49,22 +55,23 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     background: #1e1e1e;
     position: absolute;
     top: 60px;
-    right: 0;
+    right: -220px;
     width: 200px;
+    transition: right 0.3s ease;
+  }
+
+  nav.show {
+    right: 0;
   }
 
   nav a {
     padding: 15px;
     border-top: 1px solid #333;
-  }
-
-  nav.show {
-    display: flex;
   }
 
   .menu-toggle {
