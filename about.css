@@ -69,12 +69,13 @@ main h1 {
 
 /* FOTO PROFIL */
 .profile-img {
-  width: 250px;
-  max-width: 90%;
-  border-radius: 15px;
+  width: 180px;        /* kecilkan ukuran */
+  max-width: 80%;      /* aman di mobile */
   display: block;
-  margin: 20px auto;
+  margin: 30px auto;   /* auto = center */
+  border-radius: 50%;  /* opsional: bulat */
 }
+
 
 /* CAPTION */
 .caption {
