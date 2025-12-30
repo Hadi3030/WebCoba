@@ -51,12 +51,14 @@ header {
 }
 
 .home-section {
-  text-align: center;
+  width: 100%;
+  height: 60vh;          /* tinggi section */
+  overflow: hidden;
 }
 
 .home-image {
-  width: 800px;
-  margin: 30px auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* biar proporsi aman */
   display: block;
-  border-radius: 5px;
 }
