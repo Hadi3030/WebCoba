@@ -1,3 +1,55 @@
+/* ================= HEADER ================= */
+header {
+  background: #1e1e1e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* MENU TOGGLE (☰) */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+  display: none; /* tampil hanya di mobile */
+}
+
+/* NAV DESKTOP */
+#nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* DARK MODE BUTTON */
+.dark-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
 .about-section {
   max-width: 800px;
   margin: auto;
