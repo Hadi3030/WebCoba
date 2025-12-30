@@ -7,6 +7,41 @@
 
 /* HEADER */
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+/* menu default */
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  background: #333;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 10px;
+}
+
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+header {
   background: #1e1e1e;
   color: white;
   display: flex;
