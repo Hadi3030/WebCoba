@@ -106,9 +106,11 @@ body.dark .card {
 }
 
 /* ================= RESPONSIVE ================= */
+
+/* MOBILE */
 @media (max-width: 768px) {
 
-  /* tampilkan ☰ */
+  /* tampilkan tombol ☰ */
   .menu-toggle {
     display: block;
   }
@@ -125,12 +127,34 @@ body.dark .card {
     transition: right 0.3s ease;
   }
 
+  /* saat ☰ diklik */
   #nav-menu.show {
     right: 0;
   }
 
+  /* link menu */
   #nav-menu a {
     padding: 15px;
     border-top: 1px solid #333;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+
+  /* sembunyikan ☰ */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* nav tampil normal */
+  #nav-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    right: 0;
+    width: auto;
+    padding: 0;
   }
 }
