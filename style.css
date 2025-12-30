@@ -16,12 +16,12 @@ header {
 }
 
 .menu-toggle {
-  font-size: 24px;
   background: none;
   border: none;
   color: white;
+  font-size: 26px;
   cursor: pointer;
-  display: block;
+  display: none;
 }
 
 /* menu default */
@@ -67,11 +67,11 @@ nav a {
   text-decoration: none;
 }
 
-.menu-toggle {
+/* .menu-toggle {
   display: none;
   font-size: 26px;
   cursor: pointer;
-}
+} */
 
 .dark-btn {
   background: none;
