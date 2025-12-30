@@ -42,14 +42,13 @@ header {
 #nav-menu a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
 }
 
 #nav-menu a:hover {
   text-decoration: underline;
 }
 
-/* ================= MENU TOGGLE (☰) ================= */
+/* ================= MENU TOGGLE ================= */
 .menu-toggle {
   display: none;
   font-size: 26px;
@@ -59,7 +58,7 @@ header {
   cursor: pointer;
 }
 
-/* ================= DARK MODE BUTTON ================= */
+/* ================= DARK MODE ================= */
 .dark-btn {
   background: none;
   border: none;
@@ -70,9 +69,14 @@ header {
 
 /* ================= MAIN ================= */
 main {
-  padding: 120px 20px 40px;
+  padding-top: 80px; /* kompensasi header fixed */
+}
+
+/* ================= CONTAINER ================= */
+.container {
   max-width: 1200px;
   margin: auto;
+  padding: 40px 20px;
 }
 
 /* ================= FOOTER ================= */
@@ -95,19 +99,13 @@ body.dark footer {
   background: #000;
 }
 
-body.dark #nav-menu a {
-  color: #f1f1f1;
-}
-
-/* ================= RESPONSIVE (MOBILE) ================= */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
-  /* tampilkan tombol ☰ */
   .menu-toggle {
     display: block;
   }
 
-  /* nav jadi slide */
   #nav-menu {
     position: absolute;
     top: 60px;
