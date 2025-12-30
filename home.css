@@ -1,0 +1,10 @@
+.home-section {
+  text-align: center;
+}
+
+.home-image {
+  width: 300px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 10px;
+}
