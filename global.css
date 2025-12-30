@@ -69,7 +69,7 @@ header {
 
 /* ================= MAIN ================= */
 main {
-  padding-top: 80px; /* kompensasi header fixed */
+  padding-top: 0px; /* kompensasi header fixed */
 }
 
 /* ================= CONTAINER ================= */
