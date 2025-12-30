@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -5,48 +6,13 @@
   font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background: #222;
-  color: white;
-}
-
-.menu-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 26px;
-  cursor: pointer;
-  display: none;
-}
-
-/* menu default */
-#nav-menu {
-  display: none;
-  flex-direction: column;
-  background: #333;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  padding: 10px;
-}
-
-#nav-menu a {
-  color: white;
-  text-decoration: none;
-  margin: 5px 0;
-}
-
+/* ================= HEADER ================= */
 header {
   background: #1e1e1e;
   color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 15px 20px;
 
   position: fixed;
@@ -61,18 +27,28 @@ header {
   font-weight: bold;
 }
 
-nav a {
+/* MENU TOGGLE (☰) */
+.menu-toggle {
+  background: none;
+  border: none;
   color: white;
-  margin-left: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  display: none; /* tampil hanya di mobile */
+}
+
+/* NAV DESKTOP */
+#nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+#nav-menu a {
+  color: white;
   text-decoration: none;
 }
 
-/* .menu-toggle {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-} */
-
+/* DARK MODE BUTTON */
 .dark-btn {
   background: none;
   border: none;
@@ -82,25 +58,13 @@ nav a {
   margin-left: 15px;
 }
 
-body.dark {
-  background: #121212;
-  color: #f1f1f1;
-}
-
-body.dark header,
-body.dark footer,
-body.dark nav {
-  background: #000;
-}
-
-
-/* MAIN */
+/* ================= MAIN ================= */
 main {
   padding: 100px 40px 40px;
   min-height: 70vh;
 }
 
-/* Gambar Awal*/
+/* CARD */
 .card {
   max-width: 300px;
   margin: 30px auto;
@@ -117,12 +81,7 @@ main {
   margin-bottom: 15px;
 }
 
-body.dark .card {
-  background: #1e1e1e;
-}
-
-
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
   background: #1e1e1e;
   color: white;
@@ -130,29 +89,48 @@ footer {
   padding: 15px;
 }
 
-/* RESPONSIVE */
+/* ================= DARK MODE ================= */
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark header,
+body.dark footer,
+body.dark #nav-menu {
+  background: #000;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+}
+
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    background: #1e1e1e;
+
+  /* tampilkan ☰ */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* nav jadi slide */
+  #nav-menu {
     position: absolute;
     top: 60px;
     right: -220px;
     width: 200px;
+    background: #1e1e1e;
+    flex-direction: column;
+    padding: 10px;
     transition: right 0.3s ease;
   }
 
-  nav.show {
+  #nav-menu.show {
     right: 0;
   }
 
-  nav a {
+  #nav-menu a {
     padding: 15px;
     border-top: 1px solid #333;
-  }
-
-  .menu-toggle {
-    display: block;
   }
 }
