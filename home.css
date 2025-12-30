@@ -1,35 +1,30 @@
-/* ================= HERO SECTION ================= */
+/* ================= HERO ================= */
 .home-hero {
-  width: 100%;
+  width: 100vw;
   height: 60vh;
-  margin-top: 80px; /* kompensasi header fixed */
 
-  background-image: url("images/bcg-home.jpg");
+  background-image: url("images/foto-saya.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* TEKS DI ATAS BACKGROUND (OPSIONAL) */
+/* ================= HERO TEXT ================= */
 .hero-content {
+  background: rgba(0, 0, 0, 0.45);
   color: white;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 100px 120px;
-  border-radius: 10px;
+  padding: 25px 40px;
+  border-radius: 12px;
+  font-size: 28px;
 }
 
-/* ================= CONTENT ================= */
-.home-content {
-  padding: 40px;
-  text-align: center;
-}
-
+/* ================= TEXT ================= */
 .caption {
   max-width: 700px;
   margin: 20px auto;
+  text-align: center;
 }
