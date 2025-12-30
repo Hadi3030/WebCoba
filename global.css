@@ -1,0 +1,129 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+  background: #ffffff;
+  color: #222;
+}
+
+/* ================= HEADER ================= */
+header {
+  background: #1e1e1e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ================= NAV ================= */
+#nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#nav-menu a:hover {
+  text-decoration: underline;
+}
+
+/* ================= MENU TOGGLE (☰) ================= */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= DARK MODE BUTTON ================= */
+.dark-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ================= MAIN ================= */
+main {
+  padding: 120px 20px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
+}
+
+/* ================= DARK MODE ================= */
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark header,
+body.dark footer {
+  background: #000;
+}
+
+body.dark #nav-menu a {
+  color: #f1f1f1;
+}
+
+/* ================= RESPONSIVE (MOBILE) ================= */
+@media (max-width: 768px) {
+
+  /* tampilkan tombol ☰ */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* nav jadi slide */
+  #nav-menu {
+    position: absolute;
+    top: 60px;
+    right: -220px;
+    width: 200px;
+    flex-direction: column;
+    background: #1e1e1e;
+    transition: right 0.3s ease;
+  }
+
+  #nav-menu.show {
+    right: 0;
+  }
+
+  #nav-menu a {
+    padding: 15px;
+    border-top: 1px solid #333;
+  }
+}
