@@ -3,10 +3,17 @@
   width: 100vw;
   height: 100vh;
 
-  background-image: url("images/bcg-home.jpg");
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(30, 74, 150, 0.45),
+      rgba(250, 168, 92, 0.45)
+    ),
+    url("images/bcg-home.jpg");
+
   background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
@@ -19,7 +26,10 @@
   color: white;
   padding: 25px 40px;
   border-radius: 0px;
-  font-size: 120px;
+
+  /* RESPONSIVE FONT */
+  font-size: clamp(3rem, 10vw, 7.5rem);
+  text-align: center;
 }
 
 /* ================= TEXT ================= */
@@ -27,4 +37,5 @@
   max-width: 700px;
   margin: 20px auto;
   text-align: center;
+  line-height: 1.6;
 }
