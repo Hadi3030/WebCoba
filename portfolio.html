@@ -3,22 +3,22 @@
 <head>
   <title>Portfolio</title>
   <link rel="stylesheet" href="global.css">
-   <!-- HOME CSS -->
+  <!-- HOME CSS -->
   <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-  <header>
+
+<header>
   <div class="logo">MyWebsite</div>
 
-  <div class="menu-toggle" onclick="toggleMenu()">
-    ☰
-  </div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
   <nav id="nav-menu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="portfolio.html">Portfolio</a>
   </nav>
+
   <button class="dark-btn" onclick="toggleDark()">🌙</button>
 </header>
 
@@ -34,11 +34,10 @@
   <section class="container">
 
     <p class="caption">
-      Hallo, Pada project ini saya sebagai data analyst di PT.Auransi Kredit Indonesia (Persero Tbk).
+      Hallo, Pada project ini saya sebagai data analyst di PT.Asuransi Kredit Indonesia (Persero Tbk).
     </p>
 
-    <!-- <h2>Produk Asuransi di PT.Asuransi Kredit Indonesia Yang Beresiko Pertahun</h2> -->
-
+    <!-- ================= LOOKER STUDIO ================= -->
     <iframe
       src="https://lookerstudio.google.com/embed/reporting/23f89a00-4290-4a46-a642-beaedea439eb/page/PBGgF"
       width="100%"
@@ -46,13 +45,23 @@
       style="border:0;"
       allowfullscreen>
     </iframe>
-    <iframe
-      src="https://www.canva.com/design/DAG6-RyKn4k/xoqRDZ0DpZlfQ8lxieGhzQ/view"
-      width="100%"
-      height="550"
-      style="border:0;"
-      allowfullscreen>
-    </iframe>
+
+    <!-- ================= CANVA (EDITED PART ONLY) ================= -->
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;
+      box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+      margin: 1.6em 0; overflow: hidden;
+      border-radius: 8px;">
+
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAG6-RyKn4k/xoqRDZ0DpZlfQ8lxieGhzQ/view?embed"
+        style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+    <!-- ================= END CANVA ================= -->
+
   </section>
 </main>
 
