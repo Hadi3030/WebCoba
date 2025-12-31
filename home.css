@@ -45,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 100px;                 /* jarak antar icon */
+  gap: 150px;                 /* jarak antar icon */
   margin-top: 40px;
   flex-wrap: wrap;
 }
