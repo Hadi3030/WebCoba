@@ -69,8 +69,8 @@ header {
 
 /* ================= HERO TEXT ================= */
 .hero-content {
-  background: rgba(30, 74, 150, 0.45);
-  color: ;
+  background: rgba(40, 60, 255, 1);
+  color: white;
   padding: 25px 40px;
   border-radius: 0px;
   text-align: center;
