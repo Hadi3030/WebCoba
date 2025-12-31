@@ -79,13 +79,13 @@ header {
 
 /* ================= TEXT1 ================= */
 .caption-1 {
-  max-width: 700px;
-  margin: 20px auto;
+  max-width: 800px;
+  margin: 10px auto;
   text-align: center;
 }
 /* ================= TEXT2 ================= */
 .caption-2 {
-  max-width: 700px;
-  margin: 20px auto;
+  max-width: 800px;
+  margin: 10px auto;
   text-align: justify;
 }
