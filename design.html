@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design</title>
+  <link rel="stylesheet" href="global.css">
+  <!-- HOME CSS -->
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">MyWebsite</div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="analyst.html">Data Analyst</a>
+    <a href="website.html">Personal Hub</a>
+    <a href="design.html">Design</a>
+    <a href="photo.html">Photo Collection</a>
+    <a href="research.html">Publications</a>
+  </nav>
+
+  <button class="dark-btn" onclick="toggleDark()">🌙</button>
+</header>
+
+<main>
+  <!-- ================= HERO FULL WIDTH ================= -->
+  <section class="home-hero">
+    <div class="hero-content">
+      <h1>Design</h1>
+    </div>
+  </section>
+
+  <!-- ================= KONTEN TERPUSAT ================= -->
+  <section class="container">
+
+    <p class="caption-1">
+      Hallo, Pada halaman ini saya membuat beberapa Design.
+    </p>
+
+    <!-- ================= LOOKER STUDIO ================= -->
+    <iframe
+      src="https://gearing-ratio-askrindo2026.streamlit.app/"
+      width="100%"
+      height="600"
+      style="border:0;"
+      allowfullscreen>
+    </iframe>
+    <p class="caption-2">
+      Untuk penjelasan dan analisis dapat dilihat lebih lanjut pada bagian berikut; Apa saja produk yang beresiko dan bagaimana produk Asuransi di PT.Askrindo bisa mengalami Resiko pertahunnya.
+    </p>
+    <!-- ================= CANVA (EDITED PART ONLY) ================= -->
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;
+      box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+      margin: 1.6em 0; overflow: hidden;
+      border-radius: 8px;">
+
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAG6-RyKn4k/xoqRDZ0DpZlfQ8lxieGhzQ/view?embed"
+        style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+    <!-- ================= END CANVA ================= -->
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Rehanda</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
