@@ -102,7 +102,7 @@ header {
 
 /* ===========Tampilan 1 ===================================--- */
 .tampilan1-img {
-  width: 60%;        /* ← UBAH ANGKA INI */
+  width: 30%;        /* ← UBAH ANGKA INI */
   max-width: 700px; /* batas maksimum */
   height: auto;
   display: block;
