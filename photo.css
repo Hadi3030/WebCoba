@@ -52,6 +52,62 @@ header {
 }
 
 /*=============== MAIN =============*/
+/* ===== SLIDER ================================================================== */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.slider img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* tombol panah */
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 32px;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.slide-btn.left {
+  left: -10px;
+}
+
+.slide-btn.right {
+  right: -10px;
+}
+
+.slide-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+/* ========================================================= */
+
 .website-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
