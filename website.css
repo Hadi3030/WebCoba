@@ -99,3 +99,12 @@ header {
   margin: 10px auto;
   text-align: justify;
 }
+
+/* ===========Tampilan 1 ===================================--- */
+.tampilan1-img {
+  width: 100%;
+  max-width: 900px;   /* atur sesuai selera */
+  height: auto;
+  display: block;
+  margin: 20px auto;  /* biar ke tengah */
+}
