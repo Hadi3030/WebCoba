@@ -102,8 +102,8 @@ header {
 
 /* ===========Tampilan 1 ===================================--- */
 .tampilan1-img {
-  width: 70%;
-  max-width: 800px;
+  width: 50%;
+  max-width: 600px;
   height: auto;
   margin: 30px auto;
   border-radius: 12px;
