@@ -103,6 +103,7 @@ header {
 /* ===========Tampilan 1 ===================================--- */
 /* =========== Tampilan 1 ============================== */
 .tampilan1-img {
+  align-self: center;
   display: block;        /* ⬅️ KUNCI-nya */
   width: 50%;
   max-width: 600px;
