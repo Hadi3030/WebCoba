@@ -78,6 +78,16 @@ header {
 }
 
 /* ================= TEXT1 ================= */
+.external-link {
+  color: #1a73e8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.external-link:hover {
+  text-decoration: underline;
+}
+
 .caption-1 {
   max-width: 800px;
   margin: 10px auto;
