@@ -52,17 +52,17 @@ header {
 }
 
 /*=============== MAIN =============*/
-.portfolio-grid {
+.analyst-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.portfolio-item {
+.analyst-item {
   text-align: center;
 }
 
-.portfolio-item img {
+.analyst-item img {
   width: 100%;
   border-radius: 10px;
 }
