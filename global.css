@@ -93,11 +93,13 @@ footer {
   object-fit: contain;
 }
 
-/* FORCE warna link footer */
+/* ================= FOOTER LINK COLOR FIX ================= */
 .footer-contact a,
+.footer-contact a:link,
 .footer-contact a:visited,
-.footer-contact a:active {
-  color: #ffb703;
+.footer-contact a:active,
+.footer-contact a:hover {
+  color: #ffb703;       /* warna default & hover */
   text-decoration: none;
 }
 
