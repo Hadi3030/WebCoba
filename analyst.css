@@ -88,3 +88,19 @@ header {
   margin: 10px auto;
   text-align: justify;
 }
+
+/* ================= PROJECT DIVIDER ================= */
+.project-divider {
+  width: 100%;
+  max-width: 900px;
+  height: 1px;
+  margin: 90px auto;   /* jarak atas & bawah antar project */
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0,0,0,0.35),
+    transparent
+  );
+}
+
