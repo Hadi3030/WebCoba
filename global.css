@@ -93,6 +93,9 @@ footer {
   object-fit: contain;
 }
 
+.footer-link:hover span {
+  color: #ffffff;
+}
 
 /* ================= DARK MODE ================= */
 body.dark {
