@@ -7,7 +7,15 @@ function toggleDark() {
 }
 
 // ===================== ini untuk scrol slide image=============================================================
-<script>
+function toggleMenu() {
+  document.getElementById("nav-menu").classList.toggle("show");
+}
+
+function toggleDark() {
+  document.body.classList.toggle("dark");
+}
+
+// ===================== SLIDER IMAGE =====================
 let index = 0;
 
 function slide(step) {
@@ -21,5 +29,4 @@ function slide(step) {
 
   slider.style.transform = `translateX(-${index * 100}%)`;
 }
-</script>
 
