@@ -83,6 +83,40 @@ main h1 {
   margin-bottom: 15px;
 }
 
+/* ================= ABOUT FLOATING CARD ================= */
+.about-card {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 750px;
+
+  background: rgba(255, 255, 255, 0.15); /* transparan */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+  position: relative;
+  z-index: 1;
+}
+
+/* TULISAN DALAM CARD */
+.about-card p {
+  text-align: justify;        /* rata kiri kanan */
+  line-height: 1.8;
+  font-size: 15px;
+  color: #111;
+}
+
+/* DARK MODE */
+body.dark .about-card {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+body.dark .about-card p {
+  color: #f1f1f1;
+}
+
 /* ================= FOOTER ================= */
 footer {
   background: #1e1e1e;
