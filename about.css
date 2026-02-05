@@ -157,11 +157,15 @@ body.dark .about-card p {
 }
 
 /* ================= ABOUT CONTACT ================= */
+/* ================= ABOUT CONTACT (GRID 2x2) ================= */
 .about-contact {
   margin-top: 25px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dua kolom */
+  gap: 12px 20px; /* jarak baris & kolom */
+
+  text-align: left; /* rata kiri */
 }
 
 .about-contact a {
@@ -169,6 +173,11 @@ body.dark .about-card p {
   font-size: 14px;
   color: #0a66c2;
   font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
   word-break: break-word;
 }
 
