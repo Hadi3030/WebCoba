@@ -14,7 +14,7 @@ body {
 
 /* ================= HEADER ================= */
 header {
-  background: #1e1e1e;
+  background: #173b61;
   color: white;
   display: flex;
   align-items: center;
@@ -81,7 +81,7 @@ main {
 
 /* ================= FOOTER ================= */
 footer {
-  background: #1e1e1e;
+  background: #173b61;
   color: white;
   text-align: center;
   padding: 15px;
