@@ -108,6 +108,11 @@ main h1 {
   color: #111;
 }
 
+.about-card:hover {
+  transform: translateY(-15px);
+  transition: 0.3s ease;
+}
+
 /* DARK MODE */
 body.dark .about-card {
   background: rgba(0, 0, 0, 0.4);
