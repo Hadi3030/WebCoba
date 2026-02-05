@@ -156,6 +156,31 @@ body.dark .about-card p {
   color: #f1f1f1;
 }
 
+/* ================= ABOUT CONTACT ================= */
+.about-contact {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-contact a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0a66c2;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.about-contact a:hover {
+  text-decoration: underline;
+}
+
+/* DARK MODE */
+body.dark .about-contact a {
+  color: #7bb3ff;
+}
+
 /* ================= FOOTER ================= */
 footer {
   background: #1e1e1e;
