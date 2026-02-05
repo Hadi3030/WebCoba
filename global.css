@@ -88,8 +88,8 @@ footer {
   margin-top: 60px;
 }
 .footer-icon {
-  width: 24px;
-  height: 24px;
+  width: 24px !important;
+  height: 24px !important;
   object-fit: contain;
 }
 
