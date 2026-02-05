@@ -93,8 +93,12 @@ footer {
   object-fit: contain;
 }
 
-.footer-link:hover span {
-  color: #ffffff;
+/* FORCE warna link footer */
+.footer-contact a,
+.footer-contact a:visited,
+.footer-contact a:active {
+  color: #ffb703;
+  text-decoration: none;
 }
 
 /* ================= DARK MODE ================= */
