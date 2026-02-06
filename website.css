@@ -69,12 +69,46 @@ header {
 
 /* ================= HERO TEXT ================= */
 .hero-content {
-  background: rgba(40, 60, 255, 1);
+  background: linear-gradient(135deg, #1a2cff, #4b6cff);
   color: white;
-  padding: 25px 40px;
-  border-radius: 0px;
+  padding: 35px 50px;
+  border-radius: 18px;
   text-align: center;
   font-size: 120px;
+  font-weight: 800;
+  letter-spacing: 4px;
+
+  display: inline-block;
+  position: relative;
+
+  box-shadow: 0 15px 35px rgba(60, 80, 255, 0.55);
+  animation: floatText 4s ease-in-out infinite;
+}
+
+/* Animasi floating */
+@keyframes floatText {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Glow halus */
+.hero-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: radial-gradient(circle, rgba(255,255,255,0.35), transparent 70%);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    font-size: 58px;
+    padding: 22px 30px;
+  }
 }
 
 /* ================= TEXT1 ================= */
