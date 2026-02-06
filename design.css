@@ -69,12 +69,49 @@ header {
 
 /* ================= HERO TEXT ================= */
 .hero-content {
-  background: rgba(40, 60, 255, 1);
-  color: white;
-  padding: 25px 40px;
-  border-radius: 0px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  padding: 18px 80px;
+  border-radius: 16px;
   text-align: center;
-  font-size: 120px;
+  font-size: 82px;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  display: block;
+  width: 85%;
+  margin: 30px auto;
+
+  position: relative;
+  box-shadow: 0 14px 30px rgba(30, 60, 255, 0.45);
+  animation: floatText 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes floatText {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Glow halus */
+.hero-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    font-size: 48px;
+    padding: 14px 25px;
+    width: 92%;
+  }
 }
 
 /* ================= TEXT1 ================= */
