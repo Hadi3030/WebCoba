@@ -51,21 +51,21 @@ header {
   margin-left: 15px;
 }
 
-/*=============== MAIN =============*/
-.website-grid {
+/* /*=============== MAIN =============*/
+/* .website-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-}
+} */
 
-.website-item {
+/* .website-item {
   text-align: center;
-}
+} */
 
-.website-item img {
+/* .website-item img {
   width: 100%;
   border-radius: 10px;
-}
+} */ */
 
 /* ================= HERO TEXT ================= */
 .hero-content {
