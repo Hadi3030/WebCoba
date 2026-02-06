@@ -115,6 +115,15 @@ header {
   }
 }
 
+/* ======================================== */
+.home-hero {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ================= TEXT1 ================= */
 .caption-1 {
   max-width: 800px;
