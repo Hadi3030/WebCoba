@@ -67,6 +67,7 @@ header {
 }
 
 /* ================= HERO TEXT ================= */
+/* ================= HERO TEXT ================= */
 .hero-content {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #ffffff;
@@ -79,8 +80,7 @@ header {
 
   display: block;
   width: 85%;
-  max-width: 1200px;
-  margin: 110px auto 40px;
+  margin: 30px auto;
 
   position: relative;
   box-shadow: 0 14px 30px rgba(30, 60, 255, 0.45);
@@ -111,7 +111,6 @@ header {
     font-size: 48px;
     padding: 14px 25px;
     width: 92%;
-    margin-top: 95px;
   }
 }
 
