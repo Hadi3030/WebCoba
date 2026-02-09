@@ -118,16 +118,24 @@ main {
   font-size: 18px;
   text-align: center;
   margin: 30px 0 12px;
+  color: #000000;          /* Hitam */
+}
 
-  background: #ffffff;
+.caption-1 {
+  font-size: 20px;
+  font-weight: bold;        /* BOLD */
+  text-align: center;
+  margin: 30px 0 12px;
+
+  background: linear-gradient(135deg, #fff4e6, #ffe8cc);
   padding: 10px 22px;
   border-radius: 10px;
 
   display: inline-block;
 
   box-shadow: 
-    0 6px 14px rgba(0,0,0,0.12),
-    0 2px 4px rgba(0,0,0,0.08);
+    0 6px 14px rgba(255, 140, 0, 0.15),
+    0 2px 4px rgba(0,0,0,0.06);
 
   transform: translateY(-3px);
 }
