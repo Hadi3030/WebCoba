@@ -105,6 +105,15 @@ main {
 }
 
 /* ================= TEXT ================= */
+.caption-0 {
+  font-size: 18px;
+  text-align: center;
+  margin: 30px 0 12px;
+
+  font-weight: 700;        /* Bold */
+  color: #0f172a;          /* Biru pekat (navy modern) */
+}
+
 .caption-1 {
   font-size: 18px;
   text-align: center;
