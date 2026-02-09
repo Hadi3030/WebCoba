@@ -67,9 +67,12 @@ main {
 
 /* ================= CONTAINER ================= */
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+  max-width: 1400px;   /* Lebih lebar */
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Semua konten ke tengah */
 }
 
 /* ================= TEXT ================= */
@@ -88,10 +91,13 @@ main {
 /* ================= DASHBOARD ================= */
 .dashboard-frame {
   width: 100%;
-  height: 85vh;
+  max-width: 1400px;
+  height: 92vh;
+  margin: 25px auto 40px;
   border: none;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
 /* ================= CANVA ================= */
