@@ -56,14 +56,29 @@ main {
 
 .hero-content {
   background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: white;
-  padding: 25px 60px;
+  color: #ffffff;
+  padding: 16px 40px;   /* tinggi diperkecil */
   border-radius: 16px;
-  font-size: 48px;
-  font-weight: 800;
   text-align: center;
-  box-shadow: 0 12px 28px rgba(30, 60, 255, 0.45);
+
+  font-size: 56px;     /* lebih kecil */
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  display: inline-block;
+  width: auto;
+  max-width: 90%;
+
+  margin: 25px auto;
+
+  box-shadow: 0 10px 26px rgba(30, 60, 255, 0.35);
+  animation: floatText 4s ease-in-out infinite;
 }
+.hero-content h1 {
+  margin: 0;
+  line-height: 1.1;
+}
+
 
 /* ================= CONTAINER ================= */
 .container {
