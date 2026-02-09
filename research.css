@@ -114,10 +114,23 @@ header {
   }
 }
 /* ================= TEXT1 ================= */
-.caption-1 {
-  max-width: 800px;
-  margin: 10px auto;
+.caption-2 {
+  font-size: 20px;
+  font-weight: bold;        /* BOLD */
   text-align: center;
+  margin: 30px 0 12px;
+
+  background: linear-gradient(135deg, #fff4e6, #ffe8cc);
+  padding: 10px 22px;
+  border-radius: 10px;
+
+  display: inline-block;
+
+  box-shadow: 
+    0 6px 14px rgba(255, 140, 0, 0.15),
+    0 2px 4px rgba(0,0,0,0.06);
+
+  transform: translateY(-3px);
 }
 /* ================= TEXT2 ================= */
 .caption-2 {
