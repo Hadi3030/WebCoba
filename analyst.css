@@ -49,7 +49,7 @@ main {
 .home-hero {
   width: 100%;
   min-height: 45vh;
-  padding-top: 20px; /* naikkan ke atas */
+  padding-top: 10px; /* naikkan ke atas */
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
