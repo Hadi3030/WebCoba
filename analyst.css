@@ -42,13 +42,13 @@ header {
 
 /* ================= MAIN ================= */
 main {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 /* ================= HERO ================= */
 .home-hero {
   width: 100%;
-  min-height: 20vh;
+  min-height: 10vh;
   padding-top: 0px; /* naikkan ke atas */
   padding-bottom: 0px;
   display: flex;
