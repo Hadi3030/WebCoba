@@ -48,7 +48,7 @@ main {
 /* ================= HERO ================= */
 .home-hero {
   width: 100%;
-  min-height: 28vh;
+  min-height: 20vh;
   padding-top: 0px; /* naikkan ke atas */
   padding-bottom: 0px;
   display: flex;
