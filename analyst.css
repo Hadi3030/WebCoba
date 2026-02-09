@@ -81,10 +81,6 @@ main {
   line-height: 1.1;
 }
 
-.hero-content {
-  animation: floatText 4s ease-in-out infinite;
-}
-
 @keyframes floatText {
   0%   { transform: translateY(0px) scale(1); }
   50%  { transform: translateY(-14px) scale(1.01); }
