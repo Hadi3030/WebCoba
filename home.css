@@ -1,7 +1,13 @@
+/* ================= RESET LAYOUT ================= */
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* ================= HERO ================= */
 .home-hero {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 
   background-image:
     linear-gradient(
@@ -18,89 +24,150 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 }
 
-/* ================= HERO TEXT ================= */
+/* ================= HERO FLOATING TEXT ================= */
 .hero-content {
-  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+
   color: white;
-  padding: 25px 40px;
-  border-radius: 0;
+  padding: 30px 55px;
 
-  font-size: clamp(3rem, 10vw, 7.5rem);
+  font-size: clamp(2.5rem, 7vw, 6.5rem);
   text-align: center;
+  letter-spacing: 3px;
+
+  animation: floatHero 3s ease-in-out infinite;
 }
 
-/* ================= TEXT ================= */
-.caption {
-  max-width: 700px;
-  margin: 20px auto;
-  text-align: center;
-  line-height: 1.6;
-  color: #333;
+/* Floating animation */
+@keyframes floatHero {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
 }
 
-.content-1 {
-  max-width: 700px;
-  margin: 20px auto;
-  text-align: center;   /* ⬅️ ini */
+/* ================= MAIN CONTAINER ================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 35px 90px;
 }
 
+/* ================= SECTION TITLE ================= */
 .container h2 {
   text-align: center;
-  margin: 30px 0 20px;
+  margin-bottom: 45px;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 700;
 }
-
 
 /* ================= ICON NAVIGATION ================= */
 .icon-wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 150px;                 /* jarak antar icon */
-  margin-top: 40px;
+  gap: 130px;
   flex-wrap: wrap;
 }
 
-/* Setiap icon + teks */
+/* Card wrapper */
 .icon-wrapper a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;     /* hilangkan garis bawah */
-  color: #000;               /* teks hitam */
-  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: #111;
+  transition: transform 0.3s ease;
 }
 
-/* Gambar icon */
+/* Icon image */
 .icon-img {
-  width: 80px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+  width: 85px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
 }
 
-/* Teks nama icon */
+/* Icon label */
 .icon-wrapper a span {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-align: center;
-  color: #000;
 }
 
-/* Hover effect */
+/* Hover animation */
+.icon-wrapper a:hover {
+  transform: translateY(-6px);
+}
+
 .icon-wrapper a:hover .icon-img {
-  transform: scale(1.1);
+  transform: scale(1.12);
 }
 
-.icon-wrapper a:hover span {
-  color: #444;
+/* ================= CONTENT SECTION (CANVAS + DASHBOARD) ================= */
+.content-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+
+/* ================= FLOATING TITLE BLOCK ================= */
+.title-floating {
+  display: inline-block;
+  margin: 0 auto 45px;
+  padding: 16px 45px;
+
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-align: center;
+
+  animation: floatHero 3s ease-in-out infinite;
+}
+
+/* ================= TEXT CONTENT ================= */
+.caption,
+.content-1 {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 15px;
+  color: #333;
 }
 
 /* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .icon-wrapper {
+    gap: 60px;
+  }
+
+  .container {
+    padding: 60px 25px 70px;
+  }
+}
+
 @media (max-width: 768px) {
   .icon-wrapper {
-    gap: 25px;
+    gap: 30px;
   }
 
   .icon-img {
@@ -110,31 +177,14 @@
   .icon-wrapper a span {
     font-size: 13px;
   }
-}
 
-@keyframes floatHero {
-  0% {
-    transform: translateY(0);
+  .hero-content {
+    padding: 22px 35px;
+    font-size: clamp(2.2rem, 8vw, 4.8rem);
   }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
+
+  .title-floating {
+    font-size: 24px;
+    padding: 14px 30px;
   }
 }
-
-.hero-content {
-  display: inline-block;
-  will-change: transform;
-
-  background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-
-  animation: floatHero 3s ease-in-out infinite !important;
-}
-
