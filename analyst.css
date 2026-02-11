@@ -240,3 +240,105 @@ main {
     display: block;
   }
 }
+
+/* ================= FIX HEADER OFFSET ================= */
+body {
+  padding-top: 70px;
+}
+
+/* ================= GLOBAL SMOOTH ================= */
+* {
+  scroll-behavior: smooth;
+}
+
+/* ================= IMAGE & MEDIA ================= */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= SECTION GAP ================= */
+section {
+  margin-bottom: 50px;
+}
+
+/* ================= SLIDER / GALLERY FIX ================= */
+.slider-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.slider {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider img {
+  flex: 0 0 auto;
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+}
+
+/* ================= PORTFOLIO GRID ================= */
+.portfolio-grid {
+  width: 100%;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin: 40px auto;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.14);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.18);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 80px;
+  font-size: 14px;
+}
+
+/* ================= MOBILE OPTIMIZATION ================= */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .caption-3 {
+    text-align: left;
+  }
+
+  .slider img {
+    width: 260px;
+    height: 170px;
+  }
+}
+
