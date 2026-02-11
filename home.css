@@ -49,205 +49,169 @@
 
 /* ================= CONTENT ================= */
 .container {
-  padding: 70px 30px 90px;
+  padding: 70px 30px 40px;
 }
 
 /* ================= SECTION TITLE ================= */
 .container h2 {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 55px;
   font-size: 26px;
   letter-spacing: 4px;
   font-weight: 700;
 }
 
-/* ================= FLOATING TITLE BLOCK ================= */
-.title-floating {
-  display: inline-block;
-  margin: 0 auto 50px;
-  padding: 14px 40px;
-
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.25);
-
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-
-  font-size: 26px;
-  letter-spacing: 4px;
-  font-weight: 700;
-  text-align: center;
-
-  animation: floatHero 3s ease-in-out infinite;
-}
-
-/* ================= ICON NAVIGATION ================= */
+/* ================= MENU GRID ================= */
 .icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 120px;
-  flex-wrap: wrap;
-  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Card */
-.icon-wrapper a {
+.icon-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: #111;
-  transition: transform 0.25s ease;
+  gap: 14px;
 }
 
-/* Icon image */
+/* Image circle floating */
 .icon-img {
-  width: 85px;
-  margin-bottom: 12px;
-  transition: transform 0.3s ease;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+  animation: floatHero 3s ease-in-out infinite;
+  transition: 0.35s;
 }
 
-/* Label */
-.icon-wrapper a span {
-  font-size: 14px;
+/* Label button */
+.icon-text {
+  padding: 9px 28px;
+  border-radius: 30px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 1px;
-  text-align: center;
+
+  background: rgba(0,0,0,0.65);
+  color: white;
+
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: 0.35s;
 }
 
-/* Hover */
-.icon-wrapper a:hover {
-  transform: translateY(-6px);
+.icon-card:hover .icon-img {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 25px rgba(0,200,255,0.8);
 }
 
-.icon-wrapper a:hover .icon-img {
-  transform: scale(1.12);
+.icon-card:hover .icon-text {
+  transform: scale(1.08);
 }
 
-/* ================= TEXT CONTENT ================= */
-.caption,
-.content-1 {
-  max-width: 900px;
-  margin: 0 auto 30px;
-  text-align: center;
-  line-height: 1.8;
-  font-size: 15px;
-}
-
-/* ================= FLOATING SOCIAL SECTION ================= */
 /* ================= FLOATING SOCIAL ================= */
 .floating-social {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
-  margin: 80px 0;
+  gap: 80px;
+  margin: 60px auto 100px;
 }
 
-/* Card */
+/* Social Card */
 .social-card {
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: 18px;
-  padding: 18px 22px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
+}
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+/* Social Image */
+.social-card img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
   animation: floatHero 3s ease-in-out infinite;
   transition: 0.35s;
 }
 
-.social-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 25px rgba(0,200,255,0.8);
-}
-
-/* Image kecil persegi */
-.social-card img {
-  width: 85px;
-  height: 85px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,200,255,0.6);
-}
-
-/* Button bulat modern */
+/* Social Button */
 .social-btn {
-  padding: 10px 28px;
+  padding: 10px 34px;
   border-radius: 30px;
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-decoration: none;
   color: white;
-  background: #666;
+
   box-shadow: 0 8px 18px rgba(0,0,0,0.25);
-  transition: 0.3s;
+  transition: 0.35s;
 }
 
 .social-btn:hover {
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
 /* Warna tombol */
 .blog-btn {
-  background: linear-gradient(135deg,#777,#444);
+  background: linear-gradient(135deg,#666,#333);
 }
 
 .youtube-btn {
   background: linear-gradient(135deg,#ff0000,#cc0000);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .floating-social {
-    gap: 35px;
-  }
-
-  .social-card img {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-
 /* ================= RESPONSIVE ================= */
 @media (max-width: 992px) {
   .icon-wrapper {
-    gap: 70px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
   }
 }
 
 @media (max-width: 768px) {
   .icon-wrapper {
+    grid-template-columns: repeat(2,1fr);
     gap: 35px;
   }
 
   .icon-img {
-    width: 65px;
+    width: 75px;
+    height: 75px;
   }
 
-  .icon-wrapper a span {
-    font-size: 13px;
+  .social-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .floating-social {
+    gap: 45px;
   }
 
   .hero-content {
     padding: 22px 35px;
     font-size: clamp(2.2rem, 8vw, 4.8rem);
-  }
-
-  .title-floating {
-    font-size: 22px;
-    padding: 12px 28px;
   }
 }
