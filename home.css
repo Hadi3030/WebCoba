@@ -138,6 +138,93 @@
   font-size: 15px;
 }
 
+/* ================= FLOATING SOCIAL SECTION ================= */
+.floating-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin: 80px auto 20px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.social-card {
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+
+  border-radius: 18px;
+  padding: 28px 38px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  animation: floatHero 3s ease-in-out infinite;
+  transition: 0.35s;
+}
+
+.social-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 35px rgba(0,200,255,0.8);
+}
+
+/* Profile image */
+.social-card img {
+  width: 110px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,200,255,0.8);
+}
+
+/* Button */
+.social-btn {
+  padding: 10px 34px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+
+  box-shadow: 0 0 18px rgba(0,200,255,0.7);
+  transition: 0.35s;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255,255,255,0.9);
+}
+
+/* Button colors */
+.blog-btn {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.youtube-btn {
+  background: linear-gradient(135deg, #ff0000, #ff6b6b);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .floating-social {
+    gap: 45px;
+  }
+
+  .social-card {
+    padding: 22px 28px;
+  }
+
+  .social-card img {
+    width: 90px;
+  }
+}
+
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 992px) {
   .icon-wrapper {
