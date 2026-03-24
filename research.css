@@ -151,21 +151,24 @@ header {
 }
 
 .caption-3 {
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
-  margin: 30px 0 12px;
+  margin: 20px 0;
 
   background: #ffffff;
-  padding: 10px 22px;
+  padding: 12px 20px;
   border-radius: 10px;
 
-  display: inline-block;
+  display: block; /* ubah dari inline-block */
 
   box-shadow: 
     0 6px 14px rgba(0,0,0,0.12),
     0 2px 4px rgba(0,0,0,0.08);
 
   transform: translateY(-3px);
+
+  word-wrap: break-word;       /* penting untuk link panjang */
+  overflow-wrap: break-word;   /* alternatif modern */
 }
 
 @media (max-width: 768px) {
