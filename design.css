@@ -67,6 +67,25 @@ header {
   border-radius: 10px;
 }
 
+/* ================= CANVA ================= */
+.canva-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.canva-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 /* ================= HERO TEXT ================= */
 .hero-content {
   background: linear-gradient(135deg, #0f172a, #1e293b);
